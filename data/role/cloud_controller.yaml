@@ -1,0 +1,60 @@
+# Users
+site::users:
+  nova:
+    group:
+      gid: 999
+    account:
+      uid: 999
+      gid: 999
+      home: '/var/lib/nova'
+  glance:
+    group:
+      gid: 998
+    account:
+      uid: 998
+      gid: 998
+      home: '/var/lib/glance'
+  keystone:
+    group:
+      gid: 997
+    account:
+      uid: 997
+      gid: 997
+      home: '/var/lib/keystone'
+  cinder:
+    group:
+      gid: 996
+    account:
+      uid: 996
+      gid: 996
+      home: '/var/lib/cinder'
+  swift:
+    group:
+      gid: 995
+    account:
+      uid: 995
+      gid: 995
+      home: '/var/lib/swift'
+  neutron:
+    group:
+      gid: 994
+    account:
+      uid: 994
+      gid: 994
+      home: '/var/lib/neutron'
+  heat:
+    group:
+      gid: 993
+    account:
+      uid: 993
+      gid: 993
+      home: '/var/lib/heat'
+  trove:
+    group:
+      gid: 992
+    account:
+      uid: 992
+      gid: 992
+      home: '/var/lib/trove'
+
+

@@ -1,0 +1,10 @@
+---
+:backends:
+  - yaml
+:yaml:
+  :datadir: /etc/puppet/modules/site/data
+:hierarchy:
+  - "node/%{::hostname}"
+  - "location/%{::location}"
+  - "role/%{::role}"
+  - common
