@@ -1,12 +1,15 @@
 forge 'http://forge.puppetlabs.com'
 
 mod 'apache',
-  :git => 'https://github.com/puppetlabs/puppetlabs-apache'
+  :git => 'https://github.com/puppetlabs/puppetlabs-apache',
   :ref => '1.2.0'
 
 mod 'apt',
   :git => 'https://github.com/puppetlabs/puppetlabs-apt',
   :ref => '1.7.0'
+
+mod 'bass',
+  :git => 'https://github.com/jtopjian/puppet-bass'
 
 mod 'concat',
   :git => 'https://github.com/puppetlabs/puppetlabs-concat',
@@ -84,3 +87,6 @@ mod 'vcsrepo',
 mod 'xinetd',
   :git => 'https://github.com/puppetlabs/puppetlabs-xinetd',
   :ref => '1.3.1'
+
+mod 'site',
+  :git => 'https://github.com/jtopjian/puppet-site-icehouse'
