@@ -16,6 +16,7 @@ site::firewall::policy::ipv4: 'drop'
 site::firewall::policy::ipv6: 'drop'
 site::firewall::purge: false
 site::firewall::trusted::ipv4:
+  - '127.0.0.0/8'
   - '10.1.0.0/20'
   - '192.168.255.0/24'
 site::firewall::trusted::ipv6:
@@ -23,7 +24,7 @@ site::firewall::trusted::ipv6:
   - '2605:fd00:4:1002::/64'
 site::firewall::rules:
   '100 accept all icmpv6 for ipv6':
-    proto: 'icmpv6'
+    proto: 'ipv6-icmp'
     action: 'accept'
     provider: 'ip6tables'
 
