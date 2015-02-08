@@ -20,6 +20,12 @@ site::firewall::trusted::ipv4:
   - '192.168.255.0/24'
 site::firewall::trusted::ipv6:
   - '2605:fd00:4:1000::/64'
+  - '2605:fd00:4:1002::/64'
+site::firewall::rules:
+  '100 accept all icmpv6 for ipv6':
+    proto: 'icmpv6'
+    action: 'accept'
+    provider: 'ip6tables'
 
 ## Packages
 
